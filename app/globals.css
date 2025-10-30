@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Reverted to Version 20 Color Palette */
+    --background-base: 240 100% 99%; /* #fdfdff - Very Pale Cool White */
+    --primary-text: 0 0% 21%; /* #353535 - Dark Charcoal Gray */
+    --accent-primary: 183 30% 34%; /* #3C6E71 - Muted Teal Green */
+    --card-background: 222 44% 92%; /* #e1e5f2 - Soft Blue-Gray */
+    --header-footer: 210 41% 28%; /* #284B63 - Deep Slate Blue */
+
+    /* Mapping to design system */
+    --background: var(--background-base);
+    --foreground: var(--primary-text);
+
+    --card: var(--card-background);
+    --card-foreground: var(--primary-text);
+
+    --primary: var(--accent-primary);
+    --primary-foreground: var(--background-base);
+
+    --secondary: var(--card-background);
+    --secondary-foreground: var(--primary-text);
+
+    --accent: var(--accent-primary);
+    --accent-foreground: var(--background-base);
+
+    --border: var(--header-footer);
+    --input: var(--header-footer);
+
+    --ring: var(--accent-primary);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-header-footer;
+  }
+
+  h1 {
+    @apply text-3xl font-medium;
+  }
+
+  h2 {
+    @apply text-2xl font-medium;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
+  }
+
+  p,
+  li,
+  a,
+  span,
+  div {
+    @apply font-sans text-base leading-relaxed;
+  }
+}
+
+@layer components {
+  .content-card {
+    @apply bg-card p-6 rounded-md shadow-sm border border-header-footer/10;
+  }
+
+  .cta-button {
+    @apply bg-accent-primary hover:bg-header-footer text-background-base px-6 py-3 rounded-md font-medium transition-colors;
+  }
+}

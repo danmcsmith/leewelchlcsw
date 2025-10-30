@@ -1,0 +1,57 @@
+// app/globals.css
+@layer base {
+:root {
+  /* New Color Palette */
+  --background-base: 27 57% 89%; /* #F3E2D4 - Warm Cream */
+  --primary-text: 204 27% 35%;   /* #415E72 - Deep Blue-Gray */
+  --accent-primary: 200 46% 17%; /* #17313E - Dark Teal */
+  --card-background: 284 23% 75%;/* #C5B0CD - Soft Lavender */
+  --header-footer: 200 46% 17%;  /* #17313E - Dark Teal */
+
+  /* Mapping to design system */
+  --background: var(--background-base);
+  --foreground: var(--primary-text);
+
+  --card: var(--card-background);
+  --card-foreground: var(--primary-text);
+
+  --primary: var(--accent-primary);
+  --primary-foreground: var(--background-base);
+
+  --secondary: var(--card-background);
+  --secondary-foreground: var(--primary-text);
+
+  --accent: var(--accent-primary);
+  --accent-foreground: var(--background-base);
+
+  --border: var(--header-footer);
+  --input: var(--header-footer);
+
+  --ring: var(--accent-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif text-header-footer;
+}
+}
+
+// tailwind.config.ts
+module.exports = {
+theme: {
+  extend: {
+    colors: {
+      "background-base": "#F3E2D4", /* Warm Cream */
+      "primary-text": "#415E72",     /* Deep Blue-Gray */
+      "accent-primary": "#17313E",   /* Dark Teal */
+      "card-background": "#C5B0CD",  /* Soft Lavender */
+      "header-footer": "#17313E",    /* Dark Teal */
+    },
+  },
+},
+plugins: [],
+};
