@@ -41,6 +41,9 @@ export default function Header() {
             <Link href="/services" className={`hover:text-accent-primary transition-colors ${isActive("/services")}`}>
               Services
             </Link>
+            <Link href="/forms" className={`hover:text-accent-primary transition-colors ${isActive("/forms")}`}>
+              Forms
+            </Link>
             <Link href="/contact" className={`hover:text-accent-primary transition-colors ${isActive("/contact")}`}>
               Contact
             </Link>
@@ -84,6 +87,13 @@ export default function Header() {
               onClick={closeMenu}
             >
               Services
+            </Link>
+            <Link
+              href="/forms"
+              className={`hover:text-accent-primary transition-colors ${isActive("/forms")} px-2 py-1`}
+              onClick={closeMenu}
+            >
+              Forms
             </Link>
             <Link
               href="/contact"
