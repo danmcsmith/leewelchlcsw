@@ -38,7 +38,7 @@ export default function Services() {
     {
       question: "Do you offer virtual sessions?",
       answer:
-        "Yes, I offer secure video sessions for clients who prefer teletherapy or who are unable to attend in-person appointments. I work remotely Tuesday through Thursday, and offer in-person sessions on Mondays.",
+        "Yes, I offer secure video sessions for clients who prefer teletherapy or phone sessions.",
     },
   ]
 
@@ -48,7 +48,7 @@ export default function Services() {
 
       <section className="space-y-8 mb-16 max-w-4xl mx-auto">
         <div className="content-card">
-          <h3 className="mb-4">Individual Psychotherapy - $200 per session</h3>
+          <h3 className="mb-4">Individual Psychotherapy - $185 per session</h3>
           <div className="space-y-4">
             <div>
               <h4 className="font-medium mb-2 text-header-footer">Depth-Oriented Approach</h4>
@@ -68,7 +68,7 @@ export default function Services() {
         </div>
 
         <div className="content-card">
-          <h3 className="mb-4">Couples Therapy - $225 per session</h3>
+          <h3 className="mb-4">Couples Therapy - $200 per session</h3>
           <div className="space-y-4">
             <div>
               <h4 className="font-medium mb-2 text-header-footer">Relationship Dynamics</h4>
