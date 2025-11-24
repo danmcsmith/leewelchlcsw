@@ -261,7 +261,6 @@ export default function Contact() {
                   <div>
                     <h4 className="font-medium mb-2 text-header-footer">Office Hours</h4>
                     <p className="text-sm">Tuesday–Thursday (Remote)</p>
-                    <p className="text-sm">Mondays (In-Person)</p>
                   </div>
                 </div>
               </div>
